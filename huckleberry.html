@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Huckleberry</title>
+
+  <style>
+    :root {
+      --dark-bg: #666666;
+      --light-bg: #ffffff;
+      --green-color: #00bcd4;
+      --yellow-color: #FFBF00;
+    }
+
+    .dark-bg {
+      background-color: var(--dark-bg);
+    }
+
+    .light-bg {
+      background-color: var(--light-bg);
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 50px;
+    }
+
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      max-width: 1200px;
+      width: 60%;
+      padding: 20px;
+      margin: 0 auto;
+      background-color: var(--light-bg);
+    }
+
+    .container p > span {
+      color: var(--green-color);
+      font-weight: bolder;
+    }
+
+    .container header {
+      background-color: var(--yellow-color);
+      width: 50%;
+      margin-left: -40px;
+      padding: 20px;
+    }
+
+    .border-bottom {
+      border-bottom: 10px solid #999;
+    }
+
+    @media screen and (max-width: 1024px) {
+      section {
+        padding: 30px;
+      }
+
+      .container {
+        width: 100%;
+        padding: 15px;
+        flex-direction: row;
+        margin: 0;
+      }
+
+      .container header {
+        width: 100%;
+        margin-left: -20px;
+        padding: 15px;
+      }
+
+      h1{
+        display: block;
+        width: 100%;
+      }
+      p {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    /* Mobile View (width up to 768px) */
+    @media screen and (max-width: 768px) {
+      section {
+        flex-direction: row;
+        padding: 20px;
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        padding: 10px;
+      }
+
+      .container header {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+      }
+
+      h1{
+        display: block;
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<a href="index.html">Checkout(assignment5)</a> |
+<a href="huckleberry.html">Essay(assignment3)</a> |
+<a href="essay.html">Essay(assignment4)</a>
+
+<section class="light-bg border-bottom">
+  <div class="container">
+    <h1>Huckleberry</h1>
+    <p>
+      An avant-garde agency focused on connecting <span>passion</span> with <span>logistics</span>.
+    </p>
+    <p>
+      A better way to solve the problems of tomorrow.
+    </p>
+  </div>
+</section>
+
+<section class="dark-bg">
+  <div class="container border-bottom">
+    <header class="border-bottom">Wealth comes from operations</header>
+    <p>
+      No modern business can thrive without developing a specialization in operations.
+      Huckleberry has helped dozens of companies, from Fortune 50 monoliths to fast-growing Bay Area startups,
+      achieve their goals and meet their KPIs by leveraging our extensive network of logistics experts.
+    </p>
+    <p>
+      Huckleberry was established in 2003 to help ambitious businesses discover their true potential.
+      If that resonates, let's chat!
+    </p>
+  </div>
+</section>
+</body>
+</html>
